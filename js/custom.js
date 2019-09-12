@@ -1,3 +1,4 @@
+/**/
 function showText(el) {
     if(el.previousElementSibling.clientHeight === 80) {
         el.previousElementSibling.style.height = "100%";
@@ -7,14 +8,15 @@ function showText(el) {
         el.innerHTML = "Czytaj więcej..."
     }
 }
-let comments = [];
+/*COMMENT*/
+var comments = [];
 loadComments();
 
 document.getElementById('comment-add').onclick = function(){
-    let commentName = document.getElementById('comment-name');
-    let commentBody = document.getElementById('comment-body');
+    var commentName = document.getElementById('comment-name');
+    var commentBody = document.getElementById('comment-body');
 
-    let comment = {
+    var comment = {
         name : commentName.value,
         body : commentBody.value,
         time : Math.floor(Date.now() / 1000)
@@ -38,8 +40,8 @@ function loadComments(){
 }
 
 function showComments (){
-    let commentField = document.getElementById('comment-field');
-    let out = '';
+    var commentField = document.getElementById('comment-field');
+    var out = '';
     comments.forEach(function(item){
         out += `<p class="text-right small"><em>${timeConverter(item.time)}</em></p>`;
         out += `<p class="alert alert-primary" role="alert">${item.name}</p>`;
@@ -60,3 +62,8 @@ function timeConverter(UNIX_timestamp){
     var time = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min + ':' + sec ;
     return time;
   }
+  /*MENU_BTN*/
+$('.menu_btn').on('click', function(e){
+	e.preventDefault;
+	$(this).toggleClass('menu_btn_active')
+});
