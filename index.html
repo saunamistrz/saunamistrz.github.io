@@ -5,9 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>www.Saunamistrz.com</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/fonts.css">
-    <link rel="stylesheet" type="text/css" href="css/media.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="libs/bootstrap-4.3.1/css/bootstrap-grid.css">
 	<link rel="stylesheet" type="text/css" href="libs/bootstrap-4.3.1/css/bootstrap-grid.css.map">
@@ -23,6 +23,7 @@
 	<link rel="stylesheet" type="text/css" href="libs/bootstrap-4.3.1/css/bootstrap.min.css.map">
 </head>
 <body>
+	<!--HEADER-->
 	<header class="top_header">
 		<div class="header_topline">
 			<div class="container">
@@ -36,8 +37,8 @@
 							<a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
 						</div>
 						<div class="contacts_head">
-							<p><span><i class="fa fa-phone" aria-hidden="true"></i>+48731357821</span></p>
-							<p><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="igorek.vorobey.94@gmail.com">igorek.vorobey.94@gmail.com</a></p>
+							<p><span class="io"><i class="fa fa-phone" aria-hidden="true"></i>+48731357821</span></p>
+							<p><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="https://mail.google.com/mail/u/0/?hl=ru#inbox">igorek.vorobey.94@gmail.com</a></p>
 						</div>
 					</div>
 				</div>
@@ -48,24 +49,54 @@
 				<div class="col-md-12">
 					<div class="row">
 						<a href="#" class="logotyp"><p>SAUNA</p></a>
+						<!-- <div class="section">
+						<a href="#" class="menu_btn">
+							<span class="line_btn"></span>
+						</a>
+					    </div> -->
+	<nav class="mobile-menu">  
+        <input type="checkbox" id="checkbox" class="mobile-menu__checkbox"> 
+        <label for="checkbox" class="mobile-menu__btn"> 
+        <div class="mobile-menu__icon"></div>      
+        </label> 
+        <div class="mobile-menu__container"> 
+        <ul class="mobile-menu__list"> 
+        <li class="mobile-menu__item">
+        <a href="#" class="mobile-menu__link">Główna</a>          
+        </li>
+        <li class="mobile-menu__item">
+        <a href="index2.html" class="mobile-menu__link">Dla Gości</a>          
+        </li>  
+        <li class="mobile-menu__item">
+        <a href="index6.html" class="mobile-menu__link">Galeria</a>
+        </li> 
+        <li class="mobile-menu__item">
+        <a href="index7.html" class="mobile-menu__link">O nas</a>
+        </li> 
+        <li class="mobile-menu__item">
+        <a href="index10.html" class="mobile-menu__link">Kontakt</a>
+        </li> 
+        </ul> 
+        </div> 
+    </nav>
 						<div class="main_menu">
 							<ul>
-		                        <li><a href="#">Strona Główna</a></li>
-		                        <li class="activ"><a href="#">Dla mistrzów</a>
+		                        <li><a href="#">Główna</a></li>
+		                        <li class="activ"><a href="#">Dla Gości</a>
 		                         <ul>
 			                        <li><a href="index2.html">Grafik</a></li>
-			                        <li><a href="index3.html">Przemowa</a></li>
-			                        <li><a href="index4.html">Rodzaje seansów</a></li>
-			                        <li><a href="index5.html">Rodzaje olejków</a></li>
-			                        <li><a href="index6.html">Zasady zachowania w saunach</a></li>
+			                        <!-- <li><a href="index3.html">Przemowa</a></li> -->
+			                        <li><a href="index3.html">Zasady zachowania w saunach</a></li>
+			                        <li><a href="index4.html">Rodzaje olejków</a></li>
+			                        <li><a href="index5.html">Rodzaje seansów</a></li>
 		                         </ul>
 		                        </li>
-		                        <li><a href="#">Galeria</a></li>
-		                        <li class="submenu"><a href="#">O nas</a>
+		                        <li><a href="index6.html">Galeria</a></li>
+		                        <li class="submenu"><a href="index7.html">O nas</a>
 		                        <ul>
-			                        <li><a href="#">Statut</a></li>
-			                        <li><a href="#">Skład zespołu</a></li>
-			                        <li><a href="#">Kontakt</a></li>
+			                        <li><a href="index8.html">Statut</a></li>
+			                        <li><a href="index9.html">Skład zespołu</a></li>
+			                        <li><a href="index10.html">Kontakt</a></li>
 		                        </ul>
 		                        </li>
 		                        <li><a href="#">Zaloguj</a></li>
@@ -80,12 +111,15 @@
 				<div class="row">
 					<div class="col-md-12">
 				<h1>Seanse saunowe</h1>
-				<h2><small>Radisson blue resort</small></h2>
+				<h2><small>Hotel & Spa</small></h2>
 			        </div>
 			    </div>
 			</div>
 		</div>
 	</header>
+	<!--/HEADER-->
+
+	<!--NAVIGATION-->
 	<nav class="page-navigation">
 	 <div class="container">
 		<div class="row">
@@ -95,8 +129,8 @@
 			        <li><a href="#">Zdjęcia</a></li>
 			        <li><a href="#">Kontakt</a></li>
 		        </ul>
-		        <form action="#" class="login">
-			        <input type="text" placeholder="Login" recuired>
+		        <form class="login_form" action="#" class="login">
+			        <input class="login_item" type="text" placeholder="Login" recuired>
 			        <input type="password" placeholder="Hasło" recuired>
 			        <input type="submit" value="Zaloguj">
 		        </form>
@@ -104,16 +138,61 @@
 		</div>
 	 </div>
     </nav>
+    <!--/NAVIGATION-->
+
     <!--MAIN-->
 	<main>
-		<div class="container">
+				<div class="container">
 			<div class="row">
 			<div class="col-md-12">	
 			<h2 class="collection-title">Rodzaje saun/<small>Możecie ocenić poziom</small></h2>
+			<p class="text_autor">Autor:<b>Ihor Vorobei</b> - 2019-10-01</p>
+<section class="body_square_transform">			
+<div class="square_transform">
+<div class="flipper" id="target">
+<div class="front">
+<a href="#target" class="home button">more</a>
+<!-- <div class="share-block">
+<a href=""><i class="fa fa-facebook"></i></a>
+<a href=""><i class="fa fa-instagram"></i></a>
+<a href=""><i class="fa fa-twitter"></i></a>
+<a href=""><i class="fa fa-youtube"></i></a>
+<a href=""><i class="fa fa-linkedin"></i></a>
+</div> -->
+<h1 class="dry_sauna">Sauna & Spa</h1>
+</div>
+<div class="back">
+<a href="#close" class="close button"><!-- <i class="fa fa-home"> --></i></a>
+<div class="inner">
+<div class="scrollbox">
+	<div class="multi_colorors_column_body">
+		<h2 class="dry_sauna_name">Sauna sucha</h2>
+	<div class="multi_colorors_column">	
+	</div>
+</div>
+<p class="text_type_sauna">Charakteryzuje ją najwyższa temperatura (od 85 °C do nawet 120 °C) i jednocześnie bardzo niska wilgotność powietrza - tylko 10%. Tak wysoką temperaturę uzyskuje się dzięki piecowi z rozgrzanymi kamieniami, których nie polewa się wodą. Sauna szwedzka zazwyczaj jest zbudowana z drewna. Mogą z niej korzystać osoby z problemami mięśniowymi, reumatoidalnym zapaleniem stawów, zapaleniem stawów kręgosłupa, czy astmą oskrzelową. Sauna fińska to dobre rozwiązanie także dla osób zawale serca (jednak mogą z niej korzystać nie wcześniej niż po pół roku). W tak wysokiej temperaturze można przebywać nie dłużej niż 12 minut. Z tego typu sauny można korzystać jedynie raz w tygodniu.</p>
+<div class="multi_colorors_column_body">
+<h3 class="dry_sauna_name">Sauna solna</h3>
+	<div class="multi_colorors_column">	
+	</div>
+	</div>				
+<p class="text_type_sauna">To odmiana sauny suchej, która jest wykonana z kamiennych brył solnych. Dzięki zastosowaniu halitu i solanek morskich w saunie solnej, mogą z niej korzystać osoby, które zmagają się ze schorzeniami dróg oddechowych: gardła, krtani, tchawicy, oskrzeli i płuc. W saunie odbywa się bowiem inhalacja solna (tzw. haloterapia): podczas sesji oddycha się parą bogatą w sól, jod, brom, wapń i magnez. Temperatura w saunie solnej niej osiąga do 80° C, a wilgotność jest umiarkowana (do 40%), dlatego można w niej przebywać 15 minut.</p>
+<div class="multi_colorors_column_body">
+<h3 class="dry_sauna_name">Sauna mokra</h3>
+	<div class="multi_colorors_column">	
+	</div>
+	</div>
+<p class="text_type_sauna">W saunie mokrej temperatura waha się w granicach 75 - 90 °C, a wilgotność powietrza nie przekracza 40%. Parę wodną wytwarza się okresowo poprzez polewanie kamieni wodą. Kąpiel w saunie mokrej nie powinna trwać dłużej niż 15 minut.</p>
+</div>	
+</div>
+</div>
+</div>
+</div>
+</section>
 			<div class="collections">
 				<div class="collection-item-auter">
 					<div class="collection-item">
-						<img src="img/sauna solankowa.jpg" height="208">
+						<img src="img/solankaBluspace.jpg" height="208">
 						<div class="collection-text">
 							<h3>Sauna solna</h3>
 							<p>To odmiana sauny suchej, która jest wykonana z kamiennych brył solnych. Dzięki zastosowaniu halitu i solanek morskich w saunie solnej, mogą z niej korzystać osoby, które zmagają się ze schorzeniami dróg oddechowych: gardła, krtani, tchawicy, oskrzeli i płuc. W saunie odbywa się bowiem inhalacja solna (tzw. haloterapia): podczas sesji oddycha się parą bogatą w sól, jod, brom, wapń i magnez. Temperatura w saunie solnej niej osiąga do 80° C, a wilgotność jest umiarkowana (do 40%), dlatego można w niej przebywać 15 minut.</p>
@@ -146,6 +225,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
+							<div class="scrolltext">
 							<h1>Kultura saunowania</h1>
 							<p>
 Kultura saunowania to zespół zachowań pożądanych w ośrodkach saunowych, w których urządzenia saunowe i okołosaunowe udostępnione są do użytku publicznego, czyli innym osobom niż właściciele. Są one uzupełniające i częściowo pokrywające się z poprawnym saunowaniem, jednak dotyczą one naszych zachowań mających wpływ na innych saunujących.
@@ -168,83 +248,47 @@ Zachowujemy się tak, jakbyśmy chcieli żeby zachowywali się inni.
 Nie filmujemy ani nie fotografujemy innych saunujących bez ich wiedzy i zgody. Nie używamy telefonów komórkowych.
 Nie zachowujemy się w sposób mogący wywołać u innych saunowiczów skrępowanie, zażenowanie lub być odbierany jako zachowanie nieobyczajne.
  Oprócz tych zasad powinniśmy przestrzegać także zasady poprawnego saunowania.</p>
+ </div>
 						</div>
 					</div>
 				</div>
 			</section>
-			<h2 class="collection-title">Video kolekcja/<small>Zapoznaj się z technikami</small></h2>
-			<div class="collections">
-				<div class="collection-item-auter">
-					<div class="collection-item">
+			<h2 class="collection-title-video">Video kolekcja/<small>Zapoznaj się z technikami</small></h2>
+			<p class="text_autor">Autor:<b>Ihor Vorobei</b> - 2019-10-01</p>
+			<div class="collections-video">
+				<div class="collection-item-auter-video">
+					<div class="collection-item-video">
 						<video controls>
 							<source src="video/NATURA I ZDROWIE I SAUNARIUM PARK WODNY KRAKÓW - NOWOŚĆ - part 2.mp4" type="video/mp4">
 						</video>
-						<div class="collection-text">
-							<h3>List Element Item</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<div class="collection-text-video">
+							<h3>Dawid saunamistrz</h3>
+							<p>"Moje ulubione zapachy to właściwie nie jeden zapach, a mieszanki. Pierwsza to imbir z pieprzem, bardzo mocny, intensywny i ciężki zapach, natomiast druga to połączenie pieprzu z czarną porzeczką, które przy odpowiednich proporcjach daje zapach grzanego wina. Można by więc wywnioskować, że to Pieprz jest moim numerem jeden. Chociaż jest też aromat „Świątynia Ognia”... Ech, dobra, pozostańmy przy pieprzu :)"</p>
 							<button onclick="showText(this)">Czytaj więcej...</button>
 						</div>
 					</div>
 				</div>
-				<div class="collection-item-auter">
-					<div class="collection-item">
+				<div class="collection-item-auter-video">
+					<div class="collection-item-video">
 						<video controls>
 							<source src="video/sauna wm hungary team- magyar csapat hivatalos filmje !.mp4" type="video/mp4">
 						</video>
-						<div class="collection-text">
-							<h3>List Element Item</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<div class="collection-text-video">
+							<h3>Rafal saunamistrz</h3>
+							<p>Jestem ogromnym zwolennikiem zapachów cytrusowych w saunie, które działają na nasz ustrój odświeżająco i pobudzająco. Grejpfrut, cytryna, mandarynka, pomarańcza, trawa cytrynowa to według mnie piękne zapachy, które świetnie łączą się też z innymi aromatami takimi jak mięta pieprzowa czy eukaliptus. Zapach, który jest ostatnimi czasy ze mną głównie kojarzony to kawa, która w połączeniu z cynamonem i pomarańczą przenosi sauniarzy w świat arabskiej kawiarni.</p>
 							<button onclick="showText(this)">Czytaj więcej...</button>
 						</div>
 					</div>
 				</div>
-				<div class="collection-item-auter">
-					<div class="collection-item">
+				<div class="collection-item-auter-video">
+					<div class="collection-item-video">
 						<video controls>
 							<source src="video/Zawód- Saunamistrz.mp4" type="video/mp4">
 						</video>
-						<div class="collection-text">
-							<h3>List Element Item</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-							<button onclick="showText(this)">Czytaj więcej...</button>
-						</div>
-					</div>
-				</div>
-			</div>
-			<h2 class="collection-title">Video kolekcja/<small>Zapoznaj się z technikami</small></h2>
-			<div class="collections">
-				<div class="collection-item-auter">
-					<div class="collection-item">
-						<video controls>
-							<source src="video/NATURA I ZDROWIE I SAUNARIUM PARK WODNY KRAKÓW - NOWOŚĆ - part 2.mp4" type="video/mp4">
-						</video>
-						<div class="collection-text">
-							<h3>List Element Item</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-							<button onclick="showText(this)">Czytaj więcej...</button>
-						</div>
-					</div>
-				</div>
-				<div class="collection-item-auter">
-					<div class="collection-item">
-						<video controls>
-							<source src="video/sauna wm hungary team- magyar csapat hivatalos filmje !.mp4" type="video/mp4">
-						</video>
-						<div class="collection-text">
-							<h3>List Element Item</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-							<button onclick="showText(this)">Czytaj więcej...</button>
-						</div>
-					</div>
-				</div>
-				<div class="collection-item-auter">
-					<div class="collection-item">
-						<video controls>
-							<source src="video/Zawód- Saunamistrz.mp4" type="video/mp4">
-						</video>
-						<div class="collection-text">
-							<h3>List Element Item</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<div class="collection-text-video">
+							<h3>Anna saunamistrz</h3>
+							<p>Ulubione zapachy podczas seansu to cytrusy oraz eukaliptusy. Choć coraz bardziej przekonują mnie drzewa.
+                            Każdy zapach jest intrygujący i wybierając jakiś do seansu zamykam oczy i upajam się nim przez chwile... myślę także o tym, jakie właściwości ma dany olejek i na co chciałabym aby działał.</p>
 							<button onclick="showText(this)">Czytaj więcej...</button>
 						</div>
 					</div>
@@ -254,10 +298,14 @@ Nie zachowujemy się w sposób mogący wywołać u innych saunowiczów skrępowa
 		</div>
 	 </div>
 	</main>
+	<!--/MAIN-->
+
+	<!--TEXT MAIN-->
 	<section class="text_main_second_iformation">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
+					<div class="scrolltext_second">
 					<h1>Poprawne saunowanie</h1>
 					<p>
 Poprawne saunowanie to zespół zachowań pożądanych w urządzeniach saunowych i okołosaunowych w których zażywamy kąpieli, niezależnie czy jesteśmy we własnej saunie czy też w jakimś ośrodku saunowym. Są to zachowania, które dotyczą wpływu na nasze zdrowie i osiągnięcie maksymalnych korzyści wynikających z kąpieli saunowych. Przed skorzystaniem z kąpieli saunowych należy bezwzględnie upewnić się, że nie mamy do nich przeciwwskazań zdrowotnych.
@@ -300,52 +348,60 @@ wydłużyć ostatni odpoczynek do minimum 15-20 minut,
 umyć dokładnie całe ciało, ale bez użycia mydła,
 jeśli to możliwe zdezynfekować stopy.
 Oprócz tych zasad powinniśmy przestrzegać także zasady kultury saunowania.</p>
+</div>
 				</div>
 			</div>
 		</div>
 	</section>
+	<!--/TEXT MAIN-->
+
+	<!--MAPS GOOGLE-->
 	<div class="maps">
 		<div class="container">
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1614.1949348292385!2d14.259749491523026!3d53.91921669431461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47aa5f4c10cd7705%3A0x428757080d75f2bb!2sRadisson+Blu+Resort+%C5%9Awinouj%C5%9Bcie!5e0!3m2!1spl!2spl!4v1564435662247!5m2!1spl!2spl" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 		</div>
 	</div>
+	<!--/MAPS GOOGLE-->
+
+	<!--COMMENT-->
 	<div class="comment">
 			 <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h2 class="text-center">
-                    Comment
-                </h2>
+                <h2 class="text-center">Komentować</h2>
             </div>
             <div class="col-lg-6">
                 <div id="comment-field"></div>
             </div>
             <div class="col-lg-6">
-                    <form>
+                    <form class="comments_page">
                             <div class="form-group">
-                              <label for="comment-name">Name:</label>
+                              <label for="comment-name">Imię:</label>
                               <input type="email" class="form-control" id="comment-name"  placeholder="Enter your name">
                             </div>
                             <div class="form-group">
-                              <label for="comment-body">Comment:</label>
+                              <label for="comment-body">Komentarz:</label>
                               <textarea type="password" class="form-control" id="comment-body" placeholder="comment"></textarea>
                             </div>
                             <div class="form-group form-check text-right">
-                                    <button type="submit" id="comment-add" class="btn btn-primary">add Comment</button>
+                                    <button type="submit" id="comment-add" class="btn btn-primary">Dodaj komentarz</button>
                             </div>
-                          </form>
+                    </form>
             </div>
-        </div>
-    </div>
-		</div>
+          </div>
+         </div>
+	</div>
+    <!--/COMMENT-->
+
 	<!--FOOTER-->
 	<footer class="footer">
 		<div class="container">
-			<p>Copirite © | Copyright 2019 | www.Saunamistrz.com</p>
+			<p>Copirite © | Copyright 2019 | Saunamistrz.github.io</p>
 		</div>
 	</footer>
 	<!--/FOOTER-->
 	<script type="text/javascript" src="js/custom.js"></script>
+	<script type="text/javascript" src="js/Qjuary.js"></script>
 	<script type="text/javascript" src="bootstrap-4.3.1/js/bootstrap.bundle.js"> </script>
 	<script type="text/javascript" src="bootstrap-4.3.1/js/bootstrap.bundle.js.map"></script>
 	<script type="text/javascript" src="bootstrap-4.3.1/js/bootstrap.bundle.min.js"></script>
