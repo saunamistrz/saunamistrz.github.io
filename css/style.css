@@ -384,6 +384,14 @@ body {
 }
 /*////INDEX7.HTML section*/
 
+/*INDEX8.HTML section*/
+.text_statute_main h1 {
+	border-bottom: 2px solid green;
+}
+.text_statute_main {
+    text-align: justify;
+}
+/*////INDEX8.HTML section*/
 /*@MEDIA*/
 @media screen and (max-width: 997px) {
 .login_form,
