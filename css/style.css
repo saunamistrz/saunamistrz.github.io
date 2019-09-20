@@ -152,7 +152,8 @@ body {
 /*BANNER*/
 .banner {
 	padding: 190px 0;
-	background: url(../img/saun-spaa.jpg) no-repeat center;
+	background: url(../img/pexels-photo-1048035.jpeg) no-repeat center;
+    background-size: cover;
 }
 .banner h1,
 .banner h2 {
@@ -348,6 +349,10 @@ body {
 /*////COMMENT*/
 
 /*INDEX5.HTML section*/
+.images_movements_square {
+    background: url("../img/pexels-photo-1048035.jpeg") no-repeat center;
+    background-size: cover;
+}
 .desert_sun {
 	background: url("../img/pustynne slonce.jpg") no-repeat left;
 	background-size: contain;
@@ -365,8 +370,8 @@ body {
     margin: 1.5em 1em;
     padding: .2em;
     border: 1px solid mediumturquoise;
-    border-right: 1px solid white;
-    border-radius: 5px;
+    border-right: 5px solid #5DE1D2;
+    border-radius: 1px;
     font-size: 1.2em; 
 }
 .Pustynne_słonce p,
@@ -374,6 +379,8 @@ body {
 .Las_jeśienny p,
 .Żimowy_wdech p {
     padding-top: 4em;
+    color: #1A338E;
+    font-style: bolder;
 }
 .Pustynne_słonce:before,
 .Świat_cytrusów:before,
@@ -386,20 +393,22 @@ body {
     min-width: 5em;
     height: 3em;
     padding: .2em;
-    background: #985124;
+    background: #48D1CC;
+    background: rgba(48,213,200,0.3);
     border-radius: 3px;
-    animation: timing 9s infinite;
+    animation: timing 15s infinite;
     line-height: 2em;
     text-shadow: .05em .05em teal;
     text-align: center;
     text-transform: capitalize;
     white-space: nowrap;
-    color: #FFF;
+    color: #1A338E;
+
 
 }
 @keyframes timing {
   50%{
-    left: 100%;
+    left: 95%;
     margin-left: -5.6em;
 }
     }
@@ -433,7 +442,7 @@ body {
 	background-size: contain;
 	height: 200px;
 	width: 200px;  
-}
+}  
 /*////INDEX5.HTML section*/
 
 /*INDEX7.HTML section*/
@@ -826,6 +835,7 @@ body {
     transform: rotateX(-180deg);
     /*transform: rotateY(-180deg);*/
     color: white;
+    overflow: auto;
 }
 .flipper:target {
     transform: rotateX(180deg);
@@ -838,10 +848,10 @@ body {
 }
 .scrollbox,
 .scrolltext,
-.scrolltext_second { 
+.scrolltext_second {
     overflow: auto; 
     width: 100%; 
-    height: 255px;
+    height: 100%;
     margin: 30px auto;
     background: linear-gradient(black 30%, rgba(255,255,255,0)), 
     linear-gradient(rgba(255,255,255,0), 
@@ -886,4 +896,17 @@ button:hover {
 
 }
 }
-/*@MEDIA
+/*@media in index5*/
+@media screen and (max-width: 990px) {
+    .container_wrap {
+        display: block;
+    }
+    .ease_square_container {
+        margin-left: 0px;
+        margin-top: 0px;
+        height: 7.2em;
+        overflow: auto;
+    }
+/*////@media in index5*/
+
+/*////@MEDIA*/
