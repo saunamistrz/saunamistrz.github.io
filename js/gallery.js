@@ -45,18 +45,6 @@ function changingTab(event){
 }
 
 
-function putClassActive(elems,evTarget,){
-	for(let i = 0;  i < elems.length; i++){
-		if(elems[i].innerHTML == event.target.innerHTML){
-			elems[i].classList.add('active');
-			let pos = arr.indexOf(elems[i].innerHTML, 0);
-			meaningForImg(arrTb, pos, pic);
-		}else{
-			elems[i].classList.remove('active');	
-		}
-	}
-	
-}
 
 
 function putMeaning(arr, arr1, startPosition){
