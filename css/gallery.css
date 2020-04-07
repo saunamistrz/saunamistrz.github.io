@@ -1,0 +1,160 @@
+
+
+#parent {
+	width: 65%;
+	text-align: center;
+	position:relative;
+	top: 0px;
+	margin-bottom: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+#parent .menu {
+	margin: 0 auto;
+	display: block;
+	height: 15%; 
+}
+
+.menu {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.menu a {
+	width: 15%;
+	height: 15%;
+	margin:0px 5px ;
+	display: inline-block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: black;
+	text-decoration: none;
+	border: 1px solid #c1b6b6;
+	font-family: Arial;
+	font-size: 12px;
+	border-radius: 6px;
+}
+.menu a:hover {
+	background: #f8f8f8;
+	text-decoration: none;
+	color: black;
+}
+.menu a.active {
+	border-color: #d04638c2;
+	background: #d6a33154;
+	text-decoration: none;
+	color: black;
+}
+#parent.tabs {
+	position: absolute;
+	top: 0px;
+	width: 65%;
+	max-width: 300px;
+
+}
+
+#pic {
+	border-radius:9px;
+}
+
+.tabs  {
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+#dts {
+	padding:  0px 5px;
+	height: 10%;
+}
+* {
+	box-sizing: border-box;
+}
+
+
+#prev, #next {
+	display: inline-block;
+	width: 25px;
+    height: 25px;
+    border:1px  solid #d04638c2;
+	color: grey;
+}
+
+.dot:not(.active) {
+
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #a02e2e;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  padding-top:5px;
+
+}
+
+
+ .dot:hover {
+  background-color: #717171;
+}
+
+.dot.active{
+ background-color: yellow;
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  padding-top:10px;
+ }
+
+#prevTb, #nextTb {
+  cursor: pointer;
+  position: absolute;
+  top: 35%;
+  width: auto;
+  margin-top: -22px;
+  padding: 12px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  background-color: transparent;
+  border-color: transparent;
+}
+.tabs #nextTb {
+  right: 15%;
+  border-radius: 6px;
+}
+
+
+.tabs #prevTb {
+  left: 15%;
+  border-radius: 6px;
+}
+/* On hover, add a black background color with a little bit see-through */
+
+#prevTb:hover, #nextTb:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.dot:hover {
+  background-color: #717171;
+}
+.num {
+  color: #f2f2f2;
+  font-size: 16px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
